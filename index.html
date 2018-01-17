@@ -2,7 +2,7 @@
 layout: default 
 ---
 
-{% for key in site.partials %}
+<!-- {% for key in site.partials %}
     <div class="large-6 columns">
       <div class="avoid_pagebreak animated fadeInUp">
           {% for partial in key[1] %}
@@ -11,4 +11,27 @@ layout: default
           {% endfor %}
       </div>
     </div>
-{% endfor %} 
+{% endfor %}  -->
+
+
+<!-- left -->
+<div class="large-6 columns">
+  <div class="avoid_pagebreak animated fadeInUp">
+    <!-- {% assign left= site.partials['left'] | sort_by_prop:'order' %} -->
+    <!-- 这里需要用括号使过滤器先于for in执行 否则数组循环结果不会改变 -->
+    {% for key in (site.partials['left'] | sort_by_prop:'order') %} 
+      {% assign file="left/" | append:key | append:".html" %} 
+      {% include {{file}} key=key %} 
+    {% endfor %}
+  </div>
+</div>
+
+<!-- right -->
+<div class="large-6 columns">
+  <div class="avoid_pagebreak animated fadeInUp">
+    {% for key in (site.partials['right'] | sort_by_prop:'order') %} 
+      {% assign file="right/" | append:key | append:".html" %} 
+      {% include {{file}} key=key %} 
+    {% endfor %}
+  </div>
+</div>
