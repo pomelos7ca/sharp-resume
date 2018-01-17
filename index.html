@@ -1,14 +1,142 @@
----
-layout: default 
----
-
-{% for key in site.partials %}
-    <div class="large-6 columns">
-      <div class="avoid_pagebreak animated fadeInUp">
-          {% for partial in key[1] %}
-            {% assign file="" | append:key[0] |append:'/' | append:partial | append:".html" %}
-            {% include {{file}} key=partial %}
-          {% endfor %}
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8" />
+  <title>
+    
+      Sharp-summit
+    
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/sharp-resume/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/sharp-resume/assets/css/foundation.min.css">
+  <link rel="stylesheet" href="/sharp-resume/assets/icons/foundation-icons.css">
+  <link rel="stylesheet" href="/sharp-resume/assets/css/pizza.min.css">
+  <link rel="stylesheet" href="/sharp-resume/assets/css/app.css">
+</head>
+<body>
+  <div class="resume-body">
+    <div id="header">
+  <div class="row animated fadeInDown">
+    <div class="large-4 columns">
+      <h2>
+        Sharp-summit
+      </h2>
+      <h6 class="light">
+        .NET Development Engineer
+      </h6>
+    </div>
+    <div class="large-3 columns">
+      <div class="row">
+        <div class="small-12 columns border-left light2 ">
+          <ul class="no-bullet">
+            <li>male - 24</li>
+            <li>Hefei·AnHui</li>
+          </ul>
+        </div>
       </div>
     </div>
-{% endfor %} 
+    <div class="large-3 columns">
+      <div class="row">
+        <div class="small-12 columns border-left light2">
+          <ul class="no-bullet">
+            <li>summit7ca@163.com</li>
+            <li>+86 15055168824</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="large-2 columns text-right website">
+      <a href="http://www.telephnik.site" target="_blank">telephnik.site</a>
+    </div>
+  </div>
+</div>
+
+    <div class="row main">
+      educationinformation
+
+    <div class="large-6 columns">
+      <div class="avoid_pagebreak animated fadeInUp">
+          
+            
+            
+<h4 class="title">
+    <i class=""></i>Education experience</h4>
+  <div class="pro_surround">
+    <div class="pro animated">
+      <div class="pro_item">
+        <div class="pro_date">2012.09~2015.07</div>
+        <div class="pro_name">University of Cambridge </div>
+        <div>Computer software technology</div>
+        
+        <div class="pro_desc">
+          <ul>
+            
+            <li class="desc_line">Lorem ipsum dolor sit amet.</li>
+            
+            <li class="desc_line">Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+          
+            
+            
+<h4 class="title">
+  <i class="fi-"></i>Personal information</h4>
+<div class="info">
+  
+    
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil veniam, doloribus distinctio alias ipsa voluptas debitis velit optio voluptates inventore itaque reprehenderit blanditiis aut quaerat earum culpa quibusdam tenetur adipisci?</p>
+    
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quam modi delectus suscipit, quo ullam!</p>
+    
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+  
+</div>
+          
+      </div>
+    </div>
+
+    <div class="large-6 columns">
+      <div class="avoid_pagebreak animated fadeInUp">
+          
+            
+            
+<h4 class="title">
+  <i class="fi-lightbulb"></i>Work experience</h4>
+<div class="row experience">
+  
+  <div class="large-12 medium-6 small-12 columns">
+    <div class="year">3</div>
+    <div class="exp_data">
+      <div class="date">From 2014.12 to now</div>
+      <div class="role">CTO</div>
+      <div class="company">Future sky Technology Co., Ltd.</div>
+    </div>
+  </div>
+  
+</div>
+          
+      </div>
+    </div>
+ 
+    </div>
+    <div class="row footer">
+  <div class="large-12 small-12 medium-12 text-center ">
+    <div class="border text-center "></div>
+    <p class="copyright">
+      简历灵感来自
+      <a href="https://www.behance.net/gallery/15677411/FREE-Resume-Template" target="_blank">Fernando Báez</a>的设计 &
+      <a href="https://github.com/getgrav/grav-theme-resume" target="_blank">Grav的实现</a>
+    </p>
+  </div>
+</div>
+  </div>
+</body>
+</html>
