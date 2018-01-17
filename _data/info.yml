@@ -1,0 +1,27 @@
+information:
+  title: 'Personal information'
+  order: 0
+  desc: 
+    - 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil veniam, doloribus distinctio alias ipsa voluptas debitis velit optio voluptates inventore itaque reprehenderit blanditiis aut quaerat earum culpa quibusdam tenetur adipisci?'
+    - 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quam modi delectus suscipit, quo ullam!'
+    - 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+
+education:
+  title: 'Education experience'
+  order: 1
+  date: '2012.09~2015.07'
+  school: University of Cambridge
+  major: Computer software technology
+  desc:
+    - 'Lorem ipsum dolor sit amet.'
+    - 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+
+experience:
+  title: 'Work experience'
+  order: 0
+  expset: 
+    - company: Future sky Technology Co., Ltd.
+      year: 3
+      join: 2014.12
+      leave: now
+      role: CTO

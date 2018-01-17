@@ -1,0 +1,22 @@
+{% assign info=site.data.info[include.key] %}
+<h4 class="title">
+    <i class=""></i>{{info.title}}</h4>
+  <div class="pro_surround">
+    <div class="pro animated">
+      <div class="pro_item">
+        <div class="pro_date">{{info.date}}</div>
+        <div class="pro_name">{{info.school}} </div>
+        <div>{{info.major}}</div>
+        {% if info.desc.size > 0 %}
+        <div class="pro_desc">
+          <ul>
+            {% for de in info.desc %}
+            <li class="desc_line">{{de}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  

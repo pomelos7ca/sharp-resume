@@ -1,0 +1,10 @@
+{% assign info=site.data.info[include.key] %}
+<h4 class="title">
+  <i class="fi-{{ module.header.icon }}"></i>{{ info.title  }}</h4>
+<div class="info">
+  {% if info.desc %}
+    {% for de in info.desc %}
+      <p>{{ de }}</p>
+    {% endfor %}
+  {% endif %}
+</div>

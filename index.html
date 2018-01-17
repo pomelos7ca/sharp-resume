@@ -1,0 +1,14 @@
+---
+layout: default 
+---
+
+{% for key in site.partials %}
+    <div class="large-6 columns">
+      <div class="avoid_pagebreak animated fadeInUp">
+          {% for partial in key[1] %}
+            {% assign file="" | append:key[0] |append:'/' | append:partial | append:".html" %}
+            {% include {{file}} key=partial %}
+          {% endfor %}
+      </div>
+    </div>
+{% endfor %} 
