@@ -10,7 +10,7 @@ title: Sharp-summit
 email: summit7ca@163.com
 mobile: +86 15055168824
 job: .NET Development Engineer
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/sharp-resume" # the subpath of your site, e.g. /blog
 url: "http://summit7ca.oschina.io" # the base hostname & protocol for your site
 
 # Build settings
