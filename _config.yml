@@ -20,7 +20,7 @@ url: "http://summit7ca.oschina.io" # the base hostname & protocol for your site
 
 # Posts settings
 # future: true
-# safe: false
+safe: true
 # lsi: false
 # excerpt_separator: "\n\n"
 
