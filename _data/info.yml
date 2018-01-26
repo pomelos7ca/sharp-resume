@@ -1,3 +1,4 @@
+# left
 information:
   title: 'Personal information'
   order: 0
@@ -16,6 +17,60 @@ education:
     - 'Lorem ipsum dolor sit amet.'
     - 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
 
+skills:
+  title: 'Skills'
+  order: 2
+  basic:
+    name: 'Web Development'
+    desc:
+      - name: 'Asp.net MVC'
+        level: 7
+      - name: 'Asp.net Web API'
+        level: 6
+      - name: 'SQL'
+        level: 5
+      - name: 'EF/Core/Dapper'
+        level: 4
+      - name: 'Ruby'
+        level: 3
+      - name: 'Kendo UI'
+        level: 2
+      - name: 'jQuery/Angular/Vue'
+        level: 1
+  other:
+    name: 'Other Skill'
+    desc:
+      - 'Asp.net Core'
+      - 'ABP框架'
+      - 'Nop/Virto二次开发'
+      - 'Winform/WPF/UWP'
+  desc: 
+    - 'Weixin Development'
+    - 'Git Tools'
+    - 'Linux'
+
+specialities:
+  title: 'Specialities'
+  order: 3
+  speset:
+    - name: 'Photoshop'
+      level: 92
+    - name: 'Photography'
+      level: 83
+
+recognitions:
+  title: 'Recognitions'
+  order: 4
+  recset:
+    - name: 'National Scholarship'
+      place: 'China'
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, voluptas!'
+    - name: 'Nobel prize for new technology'
+      place: 'China'
+      desc: 'Lorem ipsum dolor sit amet consectetur.'
+
+
+# right
 experience:
   title: 'Work experience'
   order: 0
@@ -25,3 +80,16 @@ experience:
       join: 2014.12
       leave: now
       role: CTO
+
+projects:
+  title: 'Projects'
+  order: 1
+  proset:
+    - name: 'Dynamic CMS'
+      start: '2017.01'
+      end: '2018.01'
+      summary: 'Asp.net MVC/Web API/Angular'
+      desc:
+        - 'Responsible for the overall site architecture design.'
+        - 'Responsible for the business module code.'
+        - 'Responsible for project progress management.'

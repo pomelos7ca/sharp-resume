@@ -12,5 +12,15 @@
     </div>
     {% include footer.html %}
   </div>
+
+  <script src="{{ site.baseurl }}/assets/js/vendor/jquery.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/pizza.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/snap.svg-min.js"></script>
+  <script type="text/javascript">
+    Pizza.init(document.body, {
+        donut: true,
+        donut_inner_ratio: 0.7,
+    });
+    </script>
 </body>
 </html>

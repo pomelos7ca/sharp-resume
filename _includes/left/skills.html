@@ -1,0 +1,32 @@
+{% assign info=site.data.info[include.key] %}
+<div class="avoid_pagebreak animated fadeInUp">
+  <h4 class="title"><i class="fi-{{ info.icon }}"></i> {{ info.title }}</h4>
+  <div class="row skill">
+    <div class="large-7 columns">
+      <h6>{{ info.basic.name }}</h6>
+      {% for item in info.basic.desc %}
+      <ul class="small-block-grid-2">
+        <li class="name">{{ item.name }}</li>
+        <li>
+          <ul class="small-block-grid-8 ellipses">
+            {% for i in (1..5) %}
+            <li><span {% if i > item.level %}class="grey"{% endif %}></span></li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+      {% endfor %}
+    </div>
+    <div class="large-5 columns ">
+      <h6>{{ info.other.name }}</h6>
+      {% for item in info.other.desc %}
+      <div class="name">{{ item }}</div>
+      {% endfor %}
+    </div>
+  </div>
+  <div>
+    {% for de in info.desc%}
+      <p>{{de}}</p>
+    {% endfor %}
+  </div>
+</div>
