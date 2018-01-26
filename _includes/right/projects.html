@@ -1,17 +1,17 @@
 {% assign info=site.data.info[include.key] %}
 <div class="avoid_pagebreak animated fadeInUp">
-  <h4 class="title"><i class="fi-{{ module.header.icon }}"></i> {{ module.header.title }}</h4>
-  {% if module.header.project %}
+  <h4 class="title"><i class="fi-{{ info.icon }}"></i> {{ info.title }}</h4>
+  {% if info.proset %}
   <div class="pro_surround">
     <div class="pro animated">
-      {% for item in module.header.project %}
+      {% for item in info.proset %}
         <div class="pro_item">
-          <div class="category">{{ item.category }}</div>
-          <div class="pro_name">{{ item.pro_name }}</div>
+          <div class="category">{{ item.summary }}</div>
+          <div class="pro_name">{{item.start}}~{{item.end}} {{ item.name }}</div>
           <div class="pro_desc">
             <ul>
-              {% for item in item.pro_desc %}
-                <li class="desc_line">{{ item.line }}</li>
+              {% for item in item.desc %}
+                <li class="desc_line">{{ item }}</li>
               {% endfor %}
             </ul>
           </div>

@@ -41,8 +41,8 @@ skills:
     name: 'Other Skill'
     desc:
       - 'Asp.net Core'
-      - 'ABP框架'
-      - 'Nop/Virto二次开发'
+      - 'ABP'
+      - 'Nop/Virto'
       - 'Winform/WPF/UWP'
   desc: 
     - 'Weixin Development'
@@ -89,6 +89,14 @@ projects:
       start: '2017.01'
       end: '2018.01'
       summary: 'Asp.net MVC/Web API/Angular'
+      desc:
+        - 'Responsible for the overall site architecture design.'
+        - 'Responsible for the business module code.'
+        - 'Responsible for project progress management.'
+    - name: 'ERP Management'
+      start: '2016.01'
+      end: '2016.12'
+      summary: 'Asp.net MVC/Web API/Angularjs'
       desc:
         - 'Responsible for the overall site architecture design.'
         - 'Responsible for the business module code.'
